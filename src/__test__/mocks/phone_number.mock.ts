@@ -31,7 +31,7 @@ export const handlers = {
             ctx.json({}),
         )
     })),
-    phoneNumbers: rest.get<DefaultBodyType, Phone_Number[]>('/phone_numbers', (req, res, ctx) => {
+    phoneNumbers: rest.get('/phone_numbers', (req, res, ctx) => {
         // if(req.params)
         return res(
             ctx.status(200),
